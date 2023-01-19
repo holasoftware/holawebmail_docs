@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Hola Webmail</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="libs/lightslider/css/lightslider.css">
+
+    <script src="javascripts/scale.fix.js"></script>
+    <script src="libs/jquery-3.6.0.js"></script>
+    <script src="libs/lightslider/js/lightslider.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+		
+  </head>
+  <body>
+<!--<img src="screenshots/compose.png"> -->
+    <div class="wrapper">
+        <header id="header">
+            <div id="header-title">
+                <h1 class="header">Hola Webmail</h1>
+                <p class="header-description">A webmail focused in privacy and cybersecurity.</p>
+            </div>
+            <ul class="github-links">
+              <li class="download"><a class="buttons" href="https://github.com/holasoftware/holawebmail/zipball/master">Download ZIP</a></li>
+              <li class="download"><a class="buttons" href="https://github.com/holasoftware/holawebmail/tarball/master">Download TAR</a></li>
+              <li><a class="buttons github" href="https://github.com/holasoftware/holawebmail">View On GitHub</a></li>
+            </ul>
+        </header>
+        <div id="body">
+            <main id="main">
+                <ul class="github-links">
+                  <li class="download"><a class="buttons" href="https://github.com/holasoftware/holawebmail/zipball/master">Download ZIP</a></li>
+                  <li class="download"><a class="buttons" href="https://github.com/holasoftware/holawebmail/tarball/master">Download TAR</a></li>
+                  <li><a class="buttons github" href="https://github.com/holasoftware/holawebmail">View On GitHub</a></li>
+                </ul>
+                <h1>¡Hola Webmail!</h1>
+                <section id="description-section">
+                    <h2>Description</h2>
+                    <p>Django webmail app, easy to extend, with security and privacy features. The purpose of this project is to protect people and help to have privacy.</p>
+                    <p>The idea is to provide a simple and minimal user interface to make easy the integration with other projects and to extend the initial funcionality with plugins.</p>
+                </section>
+                <section id="features-section">
+                    <h2>Features</h2>
+                    <ul>
+                    <li>Login using SRP authentication</li>
+                    <li>Webmail users have different database table for login credentials and sessions than admin staff</li>
+                    <li>Safe upload of big file during email composition using upload sessions</li>
+                    <li>Markdown editor for sending emails</li>
+                    <li>Logging of all authentication attempts.</li>
+                    <li>Logging control session</li>
+                    <li>Export/Import emails</li>
+                    <li>Hook system to extend easily the webmail</li>
+                    <li>Multiconfigurable</li>
+                    <li>Save mails to draft store</li>
+                    <li>Enable or disable autodraft</li>
+                    <li>Search text in mails</li>
+                    <li>Add star to interesting mails</li>
+                    <li>Show original email headers</li>
+                    <li>Minimal dependencies (only Django)</li>
+                    <li>Responsive and clean UI design</li>
+                    <li>Automatic generation of fake data for testing purposes</li>
+                    </ul>
+                </section>
+                <section id="requirements-section">
+                    <h2>Requirements</h2>
+                    <ul>
+                        <li>Python 3</li>
+                        <li>Django >= 2.1</li>
+                    </ul>
+                </section>
+                <section id="screenshots-section">
+                    <h2>Screenshots</h2>
+                    <div id="screenshots-slideshow" class="slideshow swipeshow" >
+                        <ul class="slides">
+                            <li class="slide">
+                                <img src="screenshots/compose.png" alt="" />
+                            </li>
+                            <li class="slide">
+                                <img src="screenshots/control_sessions.png" alt="" />
+                            </li>
+                            <li class="slide">
+                                <img src="screenshots/inbox_folder.png" alt="" />
+                            </li>
+                            <li class="slide">
+                                <img src="screenshots/list_of_contacts.png" alt="" />
+                            </li>
+                            <li class="slide">
+                                <img src="screenshots/list_of_mailboxes.png" alt="" />
+                            </li>
+                            <li class="slide">
+                                <img src="screenshots/message.png" alt="" />
+                            </li>
+                            <li class="slide">
+                                <img src="screenshots/profile.png" alt="" />
+                            </li>
+                        </ul>
+                        <!--<button class='previous'></button>
+                        <button class='next'></button>-->
+                        <div class='dots'></div>
+                    </div>
+
+                </section>
+            </main>
+            <footer id="footer">
+                <p class="header">This project is developed and maintained by <a href="http://github.com/holasoftware">Miguel Martinez Lopez</a></p>
+            </footer>
+        </div>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+
+  <script>
+    (function($) {
+		$("#screenshots-slideshow > ul").lightSlider({
+            loop:true,
+            keyPress:true,
+            autoWidth: true,
+        });
+        /*
+        $('#screenshots-slideshow').lightSlider({
+            gallery:true,
+            item:1,
+            thumbItem:9,
+            slideMargin: 0,
+            speed:500,
+            auto:true,
+            loop:true,
+            onSliderLoad: function() {
+                $('#image-gallery').removeClass('cS-hidden');
+            }  
+        });*/
+    })(jQuery);
+  </script>
+
+  </body>
+</html>
